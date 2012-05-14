@@ -42,6 +42,11 @@ typedef int CDVFileTransferDirection;
 - (void) download:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
 -(NSMutableDictionary*) createFileTransferError:(NSString*)code AndSource:(NSString*)source AndTarget:(NSString*)target;
+
+-(NSMutableDictionary*) createFileTransferError:(NSString*)code 
+                                  AndSource:(NSString*)source 
+                                  AndTarget:(NSString*)target 
+                                  AndHttpStatus:(int)httpStatus;
 @end
 
 
